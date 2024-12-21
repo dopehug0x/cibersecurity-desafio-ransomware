@@ -1,11 +1,5 @@
 import os
 import pyaes
-import webbrowser
-
-#funcão que dá um tempero
-def abrir_youtube():
-    url = "https://www.youtube.com/watch?v=4TnAKurylA8&ab_channel=MCKuzenleri"  
-    webbrowser.open(url)
 
 ## abrir o arquivo a ser criptografado
 file_name = "teste.txt"
@@ -29,4 +23,4 @@ new_file = open(f'{new_file}','wb')
 new_file.write(crypto_data)
 new_file.close()
 
-abrir_youtube()
+
